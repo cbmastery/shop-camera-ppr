@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { GlobalStyles } from "./styles";
+import { Sidebar } from "@/components/sidebar";
 
 export const metadata: Metadata = {
   title: "Partial Pre-Rendering",
@@ -24,6 +25,7 @@ export default function RootLayout({
         <GlobalStyles />
       </head>
       <body className="overflow-y-scroll bg-gray-1100 bg-[url('/grid.svg')] pb-36">
+        <Sidebar />
         {children}
       </body>
     </html>
