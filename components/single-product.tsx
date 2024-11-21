@@ -1,5 +1,8 @@
+// import { Pricing } from "@/components/pricing";
 import type { Product } from "@/types/product";
+// import { ProductRating } from "@/components/product-rating";
 import Image from "next/image";
+import { ProductRating } from "./product-rating";
 
 export async function SingleProduct() {
   const product: Product = await fetch(
@@ -60,12 +63,16 @@ export async function SingleProduct() {
         {/* <Pricing product={product} /> */}
       </div>
 
-      <div>
-        <div></div>
+      <div className="col-span-full space-y-4 md:order-2 md:col-span-2">
+        <div className="truncate text-xl font-bold text-white lg:text-2xl">
+          {product.name}
+        </div>
 
-        <div>
-          <p></p>
-          <p></p>
+        <ProductRating rating={product.rating} />
+
+        <div className="space-y-4 text-sm text-gray-200">
+          <p>{product.description}</p>
+          <p>{product.description}</p>
         </div>
       </div>
     </div>
