@@ -1,8 +1,8 @@
-import type { Metadata } from "next";
-import { GlobalStyles } from "./styles";
-import { Sidebar } from "@/components/sidebar";
-import { Header } from "@/components/header";
 import { CartCountProvider } from "@/components/cart-count-context";
+import { Header } from "@/components/header";
+import { Sidebar } from "@/components/sidebar";
+import { Metadata } from "next";
+import { GlobalStyles } from "./styles";
 
 export const metadata: Metadata = {
   title: "Partial Pre-Rendering",
