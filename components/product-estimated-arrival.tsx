@@ -1,6 +1,6 @@
 import { add, format, isTomorrow } from "date-fns";
 
-export const ProductEstiamtedArrival = ({
+export const ProductEstimatedArrival = ({
   leadTime,
   hasDeliveryTime = false,
 }: {

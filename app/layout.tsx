@@ -26,8 +26,8 @@ export default function RootLayout({
       <head>
         <GlobalStyles />
       </head>
-      <body className="overflow-y-scroll bg-[url('/grid.svg')] pb-36">
-        {/* Re-work sidebar to liking */}
+      <body className="overflow-y-scroll bg-gray-800 bg-[url('/grid.svg')] pb-36">
+        {/* Re-work sidebar */}
         {/* <Sidebar />  */}
         <div>
           <div className="mx-auto max-w-4xl space-y-8 px-2 pt-20 lg:px-8 lg:py-8">

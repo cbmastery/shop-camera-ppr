@@ -1,6 +1,6 @@
 import { Product } from "@/types/product";
 import { ProductBestSeller } from "@/components/product-best-seller";
-import { ProductEstiamtedArrival } from "./product-estiamted-arrival";
+import { ProductEstimatedArrival } from "./product-estimated-arrival";
 import { ProductLowStockWarning } from "./products-low-stock-warning";
 import { ProductPrice } from "@/components/product-price";
 import { ProductRating } from "./product-rating";
@@ -42,7 +42,7 @@ export const ProductCard = ({ product }: { product: Product }) => {
           <ProductUsedPrice usedPrice={product.usedPrice} />
         ) : null}
 
-        <ProductEstiamtedArrival leadTime={product.leadTime} />
+        <ProductEstimatedArrival leadTime={product.leadTime} />
 
         {product.stock <= 1 ? (
           <ProductLowStockWarning stock={product.stock} />
