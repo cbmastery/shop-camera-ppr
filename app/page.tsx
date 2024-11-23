@@ -4,6 +4,7 @@ import {
   RecommendedProducts,
   RecommendedProductsSkeleton,
 } from "@/components/recommended-products";
+import { Reviews, ReviewsSkeleton } from "@/components/reviews";
 import { Ping } from "@/components/ping";
 
 export default function Page() {
@@ -19,7 +20,9 @@ export default function Page() {
 
       <Ping />
 
-      {/* <Suspense fallback={<ReviewsSkeleton />}><Reviews /></Suspense> */}
+      <Suspense fallback={<ReviewsSkeleton />}>
+        <Reviews />
+      </Suspense>
     </div>
   );
 }
